@@ -1,0 +1,298 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* STYLES */
+
+html { width: 100%;}
+
+body {
+    font-family: "proxima nova", serif;
+    font-size: 1.15em;
+    line-height: 1.45;
+    font-weight: 400;
+    color: #33333c;
+    letter-spacing: .08em;
+    text-rendering: optimizeLegibility;
+    background-color: #fff;
+    padding:0;
+    margin:0;
+    min-width: 320px;
+    height:100%;
+    width:100%;
+}
+
+h1 {
+    font-size: 1.5em;
+    line-height: 1.2;
+    margin-bottom: .5em;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    padding: 25px 0;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.3em;
+    color: #666;
+}
+
+.links {
+    padding: 1.5em 0;
+}
+
+.links ul {
+    margin: 0 auto;
+}
+
+.links a {
+    font-size: .875em;
+    border-bottom: 2px solid #33333c;
+    color: #33333c; 
+    text-decoration: none;
+    transition: border-bottom-color 0.2s;
+    -moz-transition: border-bottom-color 0.2s; 
+    -webkit-transition: border-bottom-color 0.2s; 
+    -o-transition: border-bottom-color 0.2s;
+}
+
+    .links a:hover {
+        border-bottom: none;
+        color: #33333c;
+        text-decoration: none;
+        transition: border-bottom-color 0.2s;
+        -moz-transition: border-bottom-color 0.2s; 
+        -webkit-transition: border-bottom-color 0.2s; 
+        -o-transition: border-bottom-color 0.2s;
+    }
+
+.about a {
+    font-size: 1em;
+    border-bottom: 2px solid #66666c;
+    color: #66666c; 
+    text-decoration: none;
+}
+
+    .about a:hover {
+        border-bottom: none;
+        color: #66666c;
+        text-decoration: none;
+        transition: border-bottom-color 0.2s;
+    }
+
+li {
+    padding-bottom: .5em;
+}
+
+.links a {
+    font-size: .875em;
+}
+
+.links li {
+    padding-right: 2em;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+    .links li:last-child {
+        padding-right: 0;
+    }
+
+.about {
+    text-align: center;
+    padding: 5em;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.about p {
+    font-size: 1em;
+    line-height: 1.45;
+}
+
+.logo {
+    margin: 0 auto;
+    padding-bottom: 1.5em;
+}
+
+.dribbble {
+    margin-bottom: 3em;
+}
+
+.dribbble, .instagram {
+  overflow: hidden;
+  background-color: #fff;
+  color: #33333c;
+}
+
+.dribbble-feed, #instafeed {
+  position: relative;
+  width: 100%;
+}
+
+.dribbble-feed .shot {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 16.6666667%; /* Fallback */
+  width: -webkit-calc(100% / 3);
+  width: calc(100% / 3);
+}
+
+.dribbble-feed .shot a,
+.dribbble-feed .shot a img {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.dribbble-feed .shot a img {
+  max-width: 100%;
+}
+
+.dribbble-feed .shot a .title {
+  background-color: rgba(221,221,220,0.8);
+  color: #33333c;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0.08em;
+  line-height: 300px;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: opacity 250ms ease-out;
+  -moz-transition: opacity 250ms ease-out;
+  -ms-transition: opacity 250ms ease-out;
+  -o-transition: opacity 250ms ease-out;
+  transition: opacity 250ms ease-out;
+}
+
+.dribbble-feed .shot a:hover .title {
+  opacity: 1;
+}
+
+#instafeed a {
+  display: block;
+  float: left;
+  opacity: 1;
+  overflow: hidden;
+  position: relative;
+  width: 16.6666667%; /* Fallback */
+  width: -webkit-calc(100% / 5);
+  width: calc(100% / 5);
+  -webkit-transition: opacity 250ms ease-out;
+  -moz-transition: opacity 250ms ease-out;
+  -ms-transition: opacity 250ms ease-out;
+  -o-transition: opacity 250ms ease-out;
+  transition: opacity 250ms ease-out;
+}
+
+#instafeed a img {
+  display: block;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+#instafeed a:hover {
+  opacity: 0.7;
+}
+
+footer {
+    padding: 25px 0;
+    font-size: .875em;
+    text-align: center;
+}
+
+
+/* ~ 1140px Wide */
+@media all and (max-width: 72em) {
+  .dribbble-feed .shot {
+    width: 50%;
+  }
+  #instafeed a {
+    width: 33.333333%; /* Fallback */
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+  }
+  #instafeed a:last-child {
+    display: none;
+  }
+}
+
+/* ~ 640px Wide */
+@media all and (max-width: 40em) {
+
+  #floater {
+    margin-top: -140px;
+  }
+  #floater #name {
+    background-size: 240px 83px;
+  }
+  .dribbble-feed .shot {
+    width: 100%;
+  }
+  #instafeed a {
+    width: 50%;
+  }
+  #instafeed a:last-child {
+    display: block;
+  }
+}
