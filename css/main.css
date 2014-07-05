@@ -51,7 +51,7 @@ table {
 html { width: 100%;}
 
 body {
-    font-family: "proxima nova", serif;
+    font-family: "proxima-nova", "proxima nova", serif;
     font-size: 1.15em;
     line-height: 1.45;
     font-weight: 400;
@@ -294,5 +294,15 @@ footer {
   }
   #instafeed a:last-child {
     display: block;
+  }
+  .links li {
+    display: block;
+    padding: .5em;
+  }
+  .links li:last-child {
+    padding-right: .5em;
+  }
+  .about {
+    padding: 2em;
   }
 }
