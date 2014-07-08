@@ -74,10 +74,10 @@ h1 {
 
 h2 {
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 700;
     margin: 0;
     text-transform: uppercase;
-    letter-spacing: .08em;
+    letter-spacing: .1em;
     padding: 25px 0;
     text-align: center;
 }
@@ -166,8 +166,8 @@ li {
     padding-bottom: 1.5em;
 }
 
-.dribbble {
-    margin-bottom: 3em;
+.instagram h2 {
+  padding: 50px 0;
 }
 
 .dribbble, .instagram {
@@ -206,10 +206,10 @@ li {
   color: #33333c;
   height: 100%;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   left: 0;
   letter-spacing: 0.08em;
-  line-height: 300px;
+  line-height: 100%;
   opacity: 0;
   position: absolute;
   text-align: center;
@@ -261,6 +261,9 @@ footer {
     text-align: center;
 }
 
+  footer p {
+    margin-bottom: 0;
+  }
 
 /* ~ 1140px Wide */
 @media all and (max-width: 72em) {
